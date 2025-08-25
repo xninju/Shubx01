@@ -1,0 +1,129 @@
+body {
+    overflow-x: hidden;
+    background-color: rgb(228, 228, 228);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#main img {
+    width: 100%;
+    max-width: 1366px;
+    height: 700px;
+    margin: 0;
+    display: block;
+}
+
+#heading {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+#sub {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    left: 0;
+}
+
+.drop {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.drop li {
+    width: 250px;
+    height: 61px;
+    line-height: 61px;
+    text-align: center;
+    font-size: 23px;
+    font-family: cursive;
+    position: relative;
+}
+
+.drop li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.drop li:hover {
+    border-bottom: 2px solid white;
+    line-height: 70px;
+}
+
+#header {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    text-align: center;
+    color: azure;
+    font-size: 25px;
+    font-family: cursive;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#new, #new2, #sis {
+    margin: 50px 20px;
+    font-size: 40px;
+    font-family: cursive;
+    text-align: center;
+    color: black;
+}
+
+#sis {
+    border-top: 2px solid darkslategrey;
+    border-bottom: 2px solid darkslategrey;
+    padding: 10px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.product-grid.unique {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.product-card {
+    background-color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 135px;
+    height: 130px;
+    margin: 10px;
+}
+
+.product-card h3 {
+    font-family: cursive;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.product-card h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-card h3 a:hover {
+    color: darkslategrey;
+}
